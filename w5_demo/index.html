@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="author" content="Alex Turcotte">
+    <meta name="description" content="W5 Form demo">
+
+    <title>W5 Demo | Tables & Forms</title>
+
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+    <!--let browser know we are creating a form-->
+    <form>
+
+        <!--labels are used to match with the input elements-->
+        <!--'for' attribute connects lables with the input values
+        matching 'name' and 'id' values in the <input>-->
+
+        <label for="firstName"> First Name: </label>
+
+        <input type="text" name="firstName" id="firstName">
+
+        <br>
+
+        <label for="lasyName"> Last Name: </label>
+
+        <input type="text" name="lastName" id="lastName">
+
+        <br>
+
+        <label for="age"> Age: </label>
+
+        <input type="text" name="age" id="age">
+
+
+
+    </form>
+
+
+    <!--This is the way-->
+    <h2>Form Using a Table</h2>
+
+    <form method="GET" action=""></form>
+
+    <form>
+
+        <!--table goes imeediately in the form!-->
+        <table>
+
+            <!--table head<th>- for column headers-->
+        <th>
+            <tr><!--table row-->
+
+                <!--left comumn [labels]-->
+                <td>
+                    <h2>Questions</h2>
+
+
+                </td>
+
+                <!--right colomn [inputs]-->
+                <td>
+                    <h2>Answers</h2>
+
+
+                </td>
+
+
+
+            </tr>
+        </th>
+
+        <tbody>
+            <tr><!--table row-->
+
+            <!--left comumn [lables]-->
+            <td>
+                <label for="firstName2">First Name: </label>
+
+
+            </td>
+
+            <!--right colomn [inputs]-->
+            <td>
+                <input type="text" name="firstName2" id="firstName2">
+
+                <tr><!--table row-->
+
+                    <!--left comumn [lables]-->
+                    <td>
+                        <label for="lastName2">Last Name: </label>
+        
+        
+                    </td>
+        
+                    <!--right colomn [inputs]-->
+                    <td>
+                        <input type="text" name="lastName2" id="lastName2" placeholder="Turcotte">
+
+                        <tr><!--table row-->
+
+                            <!--left comumn [lables]-->
+                            <td>
+                                <label for="age2">age: </label>
+                
+                
+                            </td>
+                
+                            <!--right colomn [inputs]-->
+                            <td>
+                                <input type="text" name="age2" id="age2">
+
+                                <tr><!--table row-->
+
+                                    <!--left comumn [lables]-->
+                                    <td>
+                                        <label for="email"> Email</label>
+                        
+                        
+                                    </td>
+                        
+                                    <!--right colomn [inputs]-->
+                                    <td>
+                                        <input type="email" name="email" id="email" placeholder="you@email.com">
+
+
+            </td>
+
+            <tr><!--table row-->
+
+                <!--left comumn [lables]-->
+                <td>
+                    <label for="comments">Comments:</label>
+    
+    
+                </td>
+    
+                <!--right colomn [inputs]-->
+                <td>
+                    <textarea name="comments" id="comments" rows="10" cols="20" placeholder="Enter your comments here..."
+                    maxlength="10" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></textarea>
+                </td>   
+
+                    <tr><!--table row-->
+
+                        <!--left comumn [lables]-->
+                        <td>
+                            <label for="faveColor">Pickyour favorite color:</label>
+            
+            
+                        </td>
+            
+                        <!--right colomn [inputs]-->
+                        <td>
+                            <select name="faveColor" id="faveColor"><!--creates drop-down for choices-->
+
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                        
+                        
+                            </select>
+                        </td>
+
+                          
+
+
+            </tr>
+
+            <tr><!--table row-->
+
+                <!--left comumn [lables]-->
+                <td>
+                    <label for="study">Program of study</label>
+    
+    
+                </td>
+    
+                <!--right colomn [inputs]-->
+                <td>
+                    <input type="radio" name="study" value="se">Software Engineering
+
+                    <br>
+
+                    <input type="radio" name="study" value="cyb">Cyber Security
+
+                    <br>
+
+                    <input type="radio" name="study" value="wd">Web Development
+
+                    <br>
+                </tr>
+
+                     <td>
+                         <label for="vehicle"> Select Your Vehcile</label>
+                    </td>
+
+                     <td>
+
+                        <input type="checkbox" name="vehicle1" value="car">Car<br>
+
+                         <input type="checkbox" name="vehicle2" value="rocinate"> The Rocinante <br>
+
+                        <input type="checkbox" name="motorcycle" value="motorcycle"> Motorcycle<br>
+
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <label for="date"> Date: </label>
+
+                    </td>
+
+                
+                    <td>
+
+                        <input type="date" name=" date" id="date">
+                    </td>
+                </tr>
+
+                <tr>
+                    <!--left-->
+                    <td>
+
+                    </td>
+
+                    <!--right-->
+                    <td>
+
+                        <input type="submit" value="SUBMIT !">
+                    </td>
+                </tr>
+
+
+                    
+
+        </tbody>
+
+            <!--table body <tbody- REQUIRED for table content-->
+
+            <!--table footer <tfoot>- for sumamations etc-->
+
+
+
+
+
+
+
+        </table>
+    </form>
+</body>
+</html>
