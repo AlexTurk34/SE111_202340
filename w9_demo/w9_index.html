@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="utf-8">
+<title>Week 9 | Lab | Alex Turcotte</title>
+
+<style>
+    div {
+        border:1px solid seagreen;
+       
+        margin-bottom:5px;
+    }
+    
+
+
+</style>
+</head>
+
+<body>
+
+    <h1>W9 | Lab | Alex Turcotte</h1>
+    <br>
+    <br>
+
+    <script type="text/javascript">
+
+        
+
+        var people =[
+            
+            {
+                first:"Jason", 
+                last:"Vorhees", 
+                credit:"Seriel killer from the movie Friday the 13th"
+            },
+            
+            {   
+                first:"Freddy", 
+                last:"Krueger", 
+                credit:"A seriel killer from the movie A Nightmare On Elm Street" 
+            },
+            
+            {
+                first:"Roger", 
+                last:"Rabbit", 
+                credit:"Who Framed Roger Rabbit"
+            },
+
+            {
+                first:"Kevin",
+                last:"McCallister",
+                credit:"Home Alone"
+            },
+
+            {
+                first:"Godzilla",
+                last:"King of The Monsters",
+                credit:"Godzilla"
+            },
+
+            {
+                first:"Buzz",
+                last:"Lightyear",
+                credit:"Toy Story"
+            },
+
+            {
+                first:"Marion",
+                last:"Cobretti",
+                credit:"Cobra"
+            }
+        ]
+    
+        console.log(people[0]) 
+        console.log(people[0].first) 
+
+
+       
+        var body = document.querySelector(`body`)
+        console.log(body)
+        console.dir(body)
+
+        
+        for(let i = 0; i < people.length; i++)
+        {
+
+            
+            var tempDiv = document.createElement(`div`)
+
+            
+            tempDiv.setAttribute(`id`, i) 
+
+            tempDiv.setAttribute(`class`, `red`)
+
+            
+            for(key in people[i]) 
+            {
+                
+                var p = document.createElement(`p`)
+
+                
+                var text = document.createTextNode(people[i][key])
+
+                
+                p.appendChild(text)
+                tempDiv.appendChild(p)
+            }
+            
+
+            
+            body.appendChild(tempDiv)
+
+        }    
+
+        
+    </script>
+
+
+</body>
+
+
+
+</html>
